@@ -379,7 +379,7 @@ for _, def in ipairs(ROADS) do
 		local a,b=P[i],P[i+1]
 		local mid=(a+b)/2
 		-- Deutlich ueber der Terrain-Oberflaeche, damit die Fahrbahn nicht einsinkt.
-		local y=36.0
+		local y=34.6
 		local len=(b-a).Magnitude+1
 		local road=part(map,Vector3.new(ROAD_HALF*2,0.8,len),
 			CFrame.lookAt(Vector3.new(mid.X,y,mid.Y),Vector3.new(b.X,y,b.Y)),
@@ -396,17 +396,6 @@ end
 
 
 -- Kreuzungsbereich: die verbundenen Strassen bilden hier eine klare Kreuzung
-local roundY = 36.0
-local island = part(map, Vector3.new(52, 1.2, 52), CFrame.new(20, roundY, 0),
-	Color3.fromRGB(80, 135, 67), E.Grass, Enum.PartType.Cylinder)
-island.Shape = Enum.PartType.Cylinder
-for i = 0, 11 do
-	local a = i*math.pi/6
-	local x, z = 20+math.cos(a)*34, math.sin(a)*34
-	local p = part(map, Vector3.new(1,0.15,6), CFrame.new(x, roundY+0.8, z)*CFrame.Angles(0,-a,0),
-		Color3.fromRGB(240,235,210), E.SmoothPlastic)
-	p.CanCollide = false
-end
-
+-- Kreuzung entsteht durch die verbundenen, gleich hohen Strassenflaechen.
 
 print("[Swiss Map] Fertig: nur Huegellandschaft, Berge, Strassen und Kreuzung.")
