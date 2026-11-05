@@ -1299,7 +1299,7 @@ for _, t in ipairs(TOWNS) do
 end
 print(("[v43] %d Doerfer gebaut"):format(#TOWNS))
 
--- Wegweiser an 2 Hauptkreuzungen
+-- Wegweiser an den Hauptkreuzungen und Abzweigen
 do
 	local wp = Instance.new("Folder")
 	wp.Name = "Wegweiser"
