@@ -1,0 +1,7 @@
+max turn per sample: 4.7 deg (Seeburg Rand 0)
+roads over lake (should be none): none
+roads outside valley (should be none): none
+towns outside/flooded: none
+pass road off-corridor samples: 0
+proper road crossings (auto-junctioned): 13
+roads: 64, road samples: 6716
