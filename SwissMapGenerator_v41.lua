@@ -135,6 +135,7 @@ local N = {
 	C4 = V2(1550, 1150),  C5 = V2(2100, 1200),
 	D1 = V2(-1500, -1350), D2 = V2(1250, -1350), D3 = V2(2100, -1350),
 	E1 = V2(-1500, 1350),  E2 = V2(1250, 1350),  E3 = V2(2100, 1350),
+	S1 = V2(1250, -810),   S2 = V2(1250, 1120),
 }
 
 local TOWNS = {
@@ -249,14 +250,14 @@ end
 local ROADS = {
 	{ name = "Nordstrasse", pts = {
 		N.A1, V2(-1350, -820), N.A2, V2(-150, -840), N.A3,
-		V2(950, -800), N.A4, V2(1900, -880), N.A5 } },
+		V2(950, -800), N.S1, N.A4, V2(1900, -880), N.A5 } },
 	{ name = "Suedstrasse", pts = {
 		N.C1, V2(-1350, 1050), N.C2, V2(-150, 1120), N.C3,
-		V2(950, 1080), N.C4, V2(1900, 1140), N.C5 } },
+		V2(950, 1080), N.S2, N.C4, V2(1900, 1140), N.C5 } },
 	{ name = "Westrand", pts = {
-		N.D1, V2(-2050, -300), N.A1, N.B1, N.C1, V2(-2050, 800), N.E1 } },
+		N.D1, N.A1, V2(-2080, -300), N.B1, N.C1, N.E1 } },
 	{ name = "Westmitte", pts = { N.A2, N.B2, N.C2 } },
-	{ name = "Seestrasse", pts = { N.D2, V2(1250, -600), N.E2 } },
+	{ name = "Seestrasse", pts = { N.D2, N.S1, N.S2, N.E2 } },
 	{ name = "Ostrand", pts = { N.D3, N.A5, N.B4, N.C5, N.E3 } },
 	{ name = "Diagonale NW", pts = { N.D1, V2(-1100, -1050), N.A2 } },
 	{ name = "Diagonale SW", pts = { N.E1, V2(-1100, 1250), N.C2 } },
