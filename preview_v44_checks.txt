@@ -1,0 +1,11 @@
+dead ends (endpoints >2.5 from another road): none
+road graph components: 1 (roads 89, crossings 295)
+exact graph: 13388 nodes, 1 components, 0 dead ends
+max turn per sample: 24.1 deg (Industrieloop @ 2330,-170)
+roads over lake (should be none except Seestrasse): none
+valley roads outside valley (should be none): none
+towns outside/flooded: none
+Tunnel West: samples 145, inside 46, portal idx 89..134, rock cover 8.4..223.3, y 24.0->70.0
+  valley/auto heights: 24.0 / 70.0 (open approach flattened in Lua)
+Tunnel Ost: samples 157, inside 62, portal idx 86..147, rock cover 6.3..285.4, y 23.9->70.0
+  valley/auto heights: 23.9 / 70.0 (open approach flattened in Lua)
